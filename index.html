@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 20px;
+      }
+      .red {
+        background-color: red;
+      }
+      .circle {
+        border-radius: 50%;
+      }
+    </style> -->
+
+    <!-- By Using file -->
+    <!-- <script src="./code.jquery.com_jquery-3.7.0.min.js"></script> -->
+    <!-- By Using file END -->
+
+    <link rel="stylesheet" href="./thirdParty/count-down/css/flipTimer.css" />
+    <!-- By usign CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- By usign CDN END-->
+    <script src="./thirdParty/count-down/js/jquery.flipTimer.js"></script>
+
+    <!-- <script>
+      $(document).ready(function () {
+        $(".box").on({
+          click: function () {
+            $(this).css("background-color", "red");
+          },
+          mouseenter: function () {
+            $(this).css("background-color", "green");
+          },
+          mouseleave: function () {
+            $(this).css("background-color", "yellow");
+          },
+        });
+      });
+    </script> -->
+  </head>
+  <body>
+    <!-- selector -->
+    <!-- <p id="demo">This is p1</p>
+    <p class="demo1">This is p2</p>
+    <p class="demo1">This is p3</p>
+    <a href="#">Link</a>  -->
+
+    <!-- Events -->
+    <!-- <p id="demo">This is p1</p>
+    <button class="btn">Click Me</button>
+    <div
+      class="box"
+      style="
+        background-color: brown;
+        width: 100px;
+        height: 100px;
+        margin-top: 1rem;
+      "
+    ></div> -->
+
+    <!-- Effects -->
+    <!-- <p id="demo">This is p1</p>
+    <button class="btn">Button 1</button>
+    <button class="btn1">Button 2</button>
+    <div
+      class="box"
+      style="
+        background-color: brown;
+        width: 100px;
+        height: 100px;
+        margin-top: 1rem;
+      "
+    ></div> -->
+
+    <!-- Manipulating HTML -->
+    <!-- <button class="btn">Button 1</button>
+    <button class="btn1">Button 2</button>
+    <div
+      class="box"
+      style="
+        background-color: brown;
+        width: 100px;
+        height: 100px;
+        margin-top: 1rem;
+      "
+    >
+      <p>This is a p tag <a href="https://www.google.com" id="link">Link</a></p>
+    </div>
+    <input type="text" id="input1" /> -->
+
+    <!--<ul id="list">
+      <li>red</li>
+      <li>black</li>
+      <li>green</li>
+    </ul>-->
+
+    <!-- <div id="box" class="box red"></div>
+    <button class="btn">Click</button> -->
+
+    <!-- Traversing HTML -->
+    <!-- <ul id="list">
+      <li>
+        <span id="span1">item1</span>
+      </li>
+      <li>
+        <span id="span2">item 2</span>
+      </li>
+    </ul> -->
+
+    <!-- No Conflict -->
+    <!-- <p id="pra">this is a p tag</p>
+    <button id="btn">click me</button> -->
+
+    <!-- Plugins -->
+    <div class="flipTimer">
+      <div class="days"></div>
+      <div class="hours"></div>
+      <div class="minutes"></div>
+      <div class="seconds"></div>
+    </div>
+
+    <!-- JQuery  -->
+    <script>
+      // $(document).ready(function () {
+      //   alert("OK");
+      // });
+
+      //$(selector).action();//Jquery syntex
+      //$("#demo").hide();   //example
+
+      // selector
+      // $("p").hide();
+      // $("*").hide();
+      // $("p.demo1").hide();
+
+      //Events
+      // $(".btn").dblclick(function () {
+      //   $("#demo").hide();
+      //   $(this).hide();
+      // });
+
+      // $(".box").mouseenter(function () {
+      //   $("#demo").hide();
+      // });
+
+      // $(".box").mouseleave(function () {
+      //   $("#demo").hide();
+      // });
+
+      // $(".box").hover(
+      //   function () {
+      //     $("#demo").hide();
+      //   },
+      //   function () {
+      //     $("#demo").show();
+      //   }
+      // );
+
+      // $(".box").on({
+      //   click: function () {
+      //     $(this).css("background-color", "red");
+      //   },
+      //   mouseenter: function () {
+      //     $(this).css("background-color", "green");
+      //   },
+      //   mouseleave: function () {
+      //     $(this).css("background-color", "yellow");
+      //   },
+      // });
+
+      // Effects
+      // $(".btn").click(function () {
+      //   $(".box").hide(1000);
+      // });
+      // $(".btn1").click(function () {
+      //   $(".box").show(2000);
+      // });
+
+      // $(".btn").click(function () {
+      //   $(".box").fadeOut(1000);
+      // });
+      // $(".btn1").click(function () {
+      //   $(".box").fadeIn(2000);
+      // });
+
+      // $(".btn").click(function () {
+      //   $(".box").fadeToggle(1000);
+      // });
+
+      // $(".btn").click(function () {
+      //   $(".box").fadeTo(1000, 0.3);
+      // });
+
+      // $(".btn").click(function () {
+      //   $(".box").slideUp(1000);
+      // });
+      // $(".btn1").click(function () {
+      //   $(".box").slideDown(2000);
+      // });
+
+      // $(".btn").click(function () {
+      //   $(".box").slideToggle(1000);
+      // });
+
+      // $(".btn").click(function () {
+      //   $(".box").animate(
+      //     {
+      //       opacity: "0.5",
+      //       height: "500px",
+      //     },
+      //     5000
+      //   );
+      // });
+      // $(".btn1").click(function () {
+      //   $(".box").stop();
+      // });
+
+      // $(".btn").click(function () {
+      //   $(".box").hide(3000, function (){
+      //     alert("div Hidden");
+      //   });
+      // });
+
+      //chaining
+      // $(".btn").click(function () {
+      //   $(".box").css("background-color", "red").slideUp(2000).slideDown(1000);
+      // });
+
+      //Manipulating HTML
+      // $(".btn").click(function () {
+      //   var txt = $(".box").text();
+      //   alert(txt);
+      // });
+
+      // $(".btn").click(function () {
+      //   var txt = $(".box").html();
+      //   alert(txt);
+      // });
+
+      // $(".btn").click(function () {
+      //   $(".box").text("Heading");
+      // });
+
+      // $(".btn").click(function () {
+      //   $(".box").html("<h2>Heading</h2>");
+      // });
+
+      // $(".btn").click(function () {
+      //   var value = $("#input1").val();
+      //   alert(value);
+      // });
+
+      // $(".btn").click(function () {
+      //   $("#input1").val("Talha Ch");
+      // });
+
+      // $(".btn").click(function () {
+      //   var value = $("#link").attr("href");
+      //   alert(value);
+      // });
+
+      // $(".btn").click(function () {
+      //   $("#link").attr("href", "www.facebook.com");
+      // });
+
+      // $(".btn").click(function () {
+      //   $("#link").attr({
+      //     href: "www.amazon.com",
+      //     id: "link2",
+      //   });
+      // });
+
+      // $("#list").append("<li>Yellow</li>");
+      // $("#list").prepend("<li>black</li>");
+      // $("#list").after("<p>After Element</p>");
+      // $("#list").before("<p>Before Element</p>");
+
+      // $("#list").empty();
+      //$("#list").remove();
+
+      // $(".btn").click(function () {
+      //   $("#box").addClass("circle");
+      //   $("#box").removeClass("red");
+      // });
+
+      // $(".btn").click(function () {
+      //   $("#box").toggleClass("red");
+      // });
+
+      // $(".btn").click(function () {
+      //   var css = $("#box").css("background-color");
+      //   alert(css);
+      // });
+
+      // $(".btn").click(function () {
+      //   $("#box").css("background-color", "yellow");
+      // });
+
+      // $(".btn").click(function () {
+      //   // var data = $("#box").width();
+      //   // var data = $("#box").innerWidth();
+      //   // var data = $("#box").outerWidth();
+      //   var data = $("#box").outerWidth(true);
+      //   alert(data);
+      // });
+
+      // Traversing HTML
+      // var elem = $("#span1").parent();
+      // elem.css("border", "1px solid red");
+
+      // var elem = $("#span1").parents();
+      // elem.css("border", "1px solid red");
+
+      // var elem = $("#span1").parentsUntil("body");
+      // elem.css("border", "1px solid red");
+
+      // var elem = $("#list").children();
+      // elem.css("border", "1px solid red");
+
+      // var elem = $("#list").find("#span2");
+      // elem.css("border", "1px solid red");
+
+      // No conflict
+      // $.noConflict();
+      // var jQ = $.noConflict();
+      // jQuery("#btn").click(function () {
+      //   jQuery("#pra").text("Text changed");
+      // });
+
+      // plugins
+
+      $(document).ready(function () {
+        $(".flipTimer").flipTimer({
+          // count up or countdown
+          direction: "down",
+
+          // the target <a href="https://www.jqueryscript.net/time-clock/">date</a>
+          date: "July 20, 2023 08:30:30",
+
+          // callback works only with direction = "down"
+          callback: function () {
+            alert("times up!");
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
